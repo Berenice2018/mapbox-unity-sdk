@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/MapboxAR/Examples/Scenes/TabletopAR.unity
     guid: a455922b0e2954431922c9fb6c5377e4
+  - enabled: 1
+    path: Assets/Scenes/GlobeAR.unity
+    guid: 93be92caa42b34ee4900c4bb530dbf97
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
