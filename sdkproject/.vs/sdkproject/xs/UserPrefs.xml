@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{1AC72F0D-A4B8-8D98-85D4-0797D47FF82A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MapboxAR/Examples/ARTabletop/Scripts/ARTableTopCameraMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MapboxAR/Examples/ARTabletop/Scripts/ARPlaneHandler.cs">
     <Files>
       <File FileName="Assets/MapboxAR/Examples/ARTabletop/Scripts/PlaceMapOnARPlane.cs" Line="12" Column="11" />
-      <File FileName="Assets/MapboxAR/Examples/ARTabletop/Scripts/ARPlaneHandler.cs" Line="6" Column="15" />
+      <File FileName="Assets/MapboxAR/Examples/ARTabletop/Scripts/ARPlaneHandler.cs" Line="19" Column="43" />
       <File FileName="Assets/MapboxAR/Scripts/ManualSync/UpdateMapPosByARPlaneY.cs" />
       <File FileName="Assets/MapboxAR/Examples/ARTabletop/Scripts/UpdateShaderCoordinatesByARPlane.cs" />
       <File FileName="Assets/MapboxAR/Unity/Ar/ManualSynchronizationContextBehaviour.cs" />
       <File FileName="Assets/MapboxAR/Unity/Ar/SimpleAutomaticSynchronizationContextBehaviour.cs" />
       <File FileName="Assets/MapboxAR/Examples/ARTabletop/Scripts/ARTableTopCameraMovement.cs" Line="37" Column="5" />
+      <File FileName="Assets/UnityARInterface/Scripts/ARController.cs" Line="13" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Analytics PreferredExecutionTarget="8644a4ad-3960-4cb8-8bdb-8a5a0ed74db5" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8c38053a-e739-4181-9fbb-2765386fa341" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="63fddc1f-3637-4ebf-b06c-dbd61be7fc64" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

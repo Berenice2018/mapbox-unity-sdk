@@ -8,6 +8,7 @@ public class PlaceMapOnARPlane : MonoBehaviour
 	[SerializeField]
 	private Transform _mapTransform;
 
+
 	void Start()
 	{
 		ARPlaneHandler.returnARPlane += PlaceMap;
