@@ -21,8 +21,8 @@ public class PlaceMapOnARPlane : MonoBehaviour
 		{
 			_mapTransform.gameObject.SetActive(true);
 		}
-
-		_mapTransform.position = plane.center;
+		var pos = plane.center;
+		_mapTransform.position = new Vector3(pos.x, pos.y + 0.01f, pos.z);
 	}
 
 	void ResetPlane()
