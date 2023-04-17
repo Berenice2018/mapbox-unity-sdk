@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class ButtonCtrl : MonoBehaviour
@@ -15,5 +15,8 @@ public class ButtonCtrl : MonoBehaviour
         defaultMap.SetActive(!_showCustom);
     }
 
-
+    public void SwitchScene(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
 }

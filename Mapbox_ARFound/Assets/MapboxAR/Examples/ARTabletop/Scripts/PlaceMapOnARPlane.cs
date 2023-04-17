@@ -7,7 +7,7 @@ public class PlaceMapOnARPlane : MonoBehaviour
 
 	[SerializeField]
 	private Transform _mapTransform;
-
+	[SerializeField] ARPlaneManager arPlaneManager;
 
 	void Start()
 	{
@@ -23,6 +23,16 @@ public class PlaceMapOnARPlane : MonoBehaviour
 		}
 		var pos = plane.center;
 		_mapTransform.position = new Vector3(pos.x, pos.y + 0.01f, pos.z);
+
+		if (_mapTransform.name.Contains("Globe"))
+		{
+			var direction = plane.center - Camera.main.transform.position;
+			direction = direction.normalized;
+			var inFrontPos = direction * 2.5f;
+			_mapTransform.position = new Vector3(inFrontPos.x, pos.y + 0.01f, inFrontPos.z);
+		}
+
+		arPlaneManager.enabled = false;
 	}
 
 	void ResetPlane()
