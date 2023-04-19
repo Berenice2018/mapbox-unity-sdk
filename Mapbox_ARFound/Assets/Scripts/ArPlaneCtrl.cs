@@ -4,6 +4,8 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.EventSystems;
+using UnityARInterface;
+using System;
 
 [RequireComponent(typeof(ARSessionOrigin))]
 public class ArPlaneCtrl : MonoBehaviour
@@ -31,9 +33,14 @@ public class ArPlaneCtrl : MonoBehaviour
         _arPlaneManager = GetComponent<ARPlaneManager>();
         _raycastManager = GetComponent<ARRaycastManager>();
 
+        ARPlaneHandler.returnARPlane += ModelPlaced;
         _arPlaneManager.planesChanged += OnPlaneChanged;
     }
 
+    private void ModelPlaced(ARPlane obj)
+    {
+        _modelIsPlaced = true;
+    }
 
     bool TouchIsOverUi()
     {
@@ -65,8 +72,7 @@ public class ArPlaneCtrl : MonoBehaviour
 
                 if (hitPlane.GetComponent<MeshCollider>().enabled)
                 {
-                    if (!_modelIsPlaced)
-                        PlaceModel(hitPose.position, hitPlane);
+                    PlaceModel(hitPose.position, hitPlane);
                 }
             }
         }
@@ -74,7 +80,7 @@ public class ArPlaneCtrl : MonoBehaviour
 
     private void PlaceModel(Vector3 pos, ARPlane plane)
     {
-        var finalPos = new Vector3(pos.x, pos.y + 0.02f, pos.z);
+        var finalPos = new Vector3(pos.x, pos.y + 0.3f, pos.z);
         _product.position = finalPos;
        /* _product.LookAt(Camera.main.transform);
         Quaternion rota = Quaternion.Euler(_product.localRotation.x,
@@ -89,6 +95,8 @@ public class ArPlaneCtrl : MonoBehaviour
     {
         //if(debug != null) debug.text += "\n***** On Disable()";
         _arPlaneManager.planesChanged -= OnPlaneChanged;
+        ARPlaneHandler.returnARPlane -= ModelPlaced;
+
     }
 
     #endregion
@@ -103,8 +111,8 @@ public class ArPlaneCtrl : MonoBehaviour
         {
             _planesTotalSize += p.size.x * p.size.y;
         }
-        if (_planesTotalSize > 6 && _arPlaneManager.enabled && _modelIsPlaced)
-            DisableLookingForArPlanes();
+        //if (_planesTotalSize > 6 && _arPlaneManager.enabled && _modelIsPlaced)
+          //  DisableLookingForArPlanes();
 
         //debug.text = "\n## OnPlaneAdded() number of ArPlanes = " + _allPlanes.Count;
         foreach (var plane in args.added)

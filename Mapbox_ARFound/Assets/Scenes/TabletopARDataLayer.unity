@@ -131,6 +131,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1246630194, guid: 1390d97c0b77a4a929a34caf1e5056a2, type: 3}
+      propertyPath: m_text
+      value: '1. Scan a horizontal surface. | 2. Tap the "Toggle Data" button '
+      objectReference: {fileID: 0}
     - target: {fileID: 1837635758748402198, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}
       propertyPath: customMap
@@ -141,6 +145,16 @@ PrefabInstance:
       propertyPath: defaultMap
       value: 
       objectReference: {fileID: 1429480877}
+    - target: {fileID: 1837635759814864499, guid: 1390d97c0b77a4a929a34caf1e5056a2,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Toggle Data: Nature Conservation, York (UK)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837635759814864499, guid: 1390d97c0b77a4a929a34caf1e5056a2,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1837635759949756224, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -180,6 +194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InfoCanvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839259697503576104, guid: 1390d97c0b77a4a929a34caf1e5056a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1917197790386669562, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}
@@ -316,6 +335,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1917743723187295986, guid: 1390d97c0b77a4a929a34caf1e5056a2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 154.13
+      objectReference: {fileID: 0}
     - target: {fileID: 2396996579699909365, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}
       propertyPath: m_IsActive
@@ -334,22 +358,22 @@ PrefabInstance:
     - target: {fileID: 3742956012861786070, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3742956012861786070, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 21
+      value: 43.376667
       objectReference: {fileID: 0}
     - target: {fileID: 3742956012861786070, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 160
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3742956012861786070, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -87
+      value: -98.753334
       objectReference: {fileID: 0}
     - target: {fileID: 7586622036554630651, guid: 1390d97c0b77a4a929a34caf1e5056a2,
         type: 3}

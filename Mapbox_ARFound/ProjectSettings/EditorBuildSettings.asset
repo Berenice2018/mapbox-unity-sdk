@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TabletopAR 1.unity
     guid: 928496743ba134e2394601ad387700a4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TabletopARDataLayer.unity
     guid: 357a8e90d88494f08b49b771cca8290b
   m_configObjects:
